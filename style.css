@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical; /* 允許垂直方向調整大小 */
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover { /* 滑鼠移上去時的顏色變化 */
+    background-color: #45a049;
+}
+#responseOutput { /* 顯示 AI 回覆的區域 */
+    margin-top: 20px;
+    text-align: left;
+    background-color: #e9e9e9;
+    padding: 15px;
+    border-radius: 4px;
+    white-space: pre-wrap; /* 保留文本中的換行和空格 */
+}
